@@ -1,25 +1,39 @@
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <title>Otsikko</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tyylit tähän -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-    </style>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Macronutrient calculator v1.0</title>
+  </head>
+  <body>
+    
+    <div class="container pt-5 pb-5">
+        <div class="p-4">
+            <p class="fs-1 text-center text-success fw-semibold">Macronutrient calculator</p>
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="row text-center">
+            <div class="col">
+                <img src="img_add.png" class="custom-image border border-dark rounded" alt="food">
+                <button class="btn btn-success mt-3" onclick="open_add_product_site()">Add product</button>
+            </div>
+            <div class="col">
+                <img src="img_remove.png" class="custom-image border border-dark rounded" alt="food">
+                <button class="btn btn-danger mt-3">Remove product</button>
+            </div>
+            <div class="col">
+                <img src="img_calculate.png" class="custom-image border border-dark rounded" alt="food">
+                <button class="btn btn-primary mt-3 ">Calculate macros</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- Sivun sisältö tähän -->
-    <h1>Tervetuloa</h1>
-    <p>Tämä on tyhjä sivupohja.</p>
 
-    <!-- Mahdollinen JavaScript tähän -->
-    <script>
-        // JS-koodi tänne
-    </script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
