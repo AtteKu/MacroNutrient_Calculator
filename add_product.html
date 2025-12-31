@@ -9,16 +9,44 @@
     <title>Macronutrient calculator v1.0</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Macronutrient Calculator</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
     <div class="container pt-5 pb-5">
         <div class="p-4">
-            <p class="fs-1 text-center text-success fw-semibold">Add a New Product</p>
+            <p class="fs-1 text-center fw-semibold">Add a New Product</p>
         </div>
     </div>
     <div class="container p-5">
         <div class="row text-center">
             <div class="col">
-                <img src="img_add.png" class="custom-image border border-dark rounded" alt="food"> 
+                <img src="img_add.png" class="custom-image-add border border-dark rounded" alt="food"> 
             </div>
         </div>
         <div class="row text-center">
@@ -43,10 +71,21 @@
         </div> 
         <div class="row">
             <div class="col text-center">
-            <button class="btn btn-success mt-3" onclick="add_product()">Add product</button>
+            <button class="btn btn-custom-color mt-3" onclick="add_product()">Add product</button>
             </div>
         </div>
     </div>
+
+    <footer class="footer_custom py-4">
+        <div class="container d-flex justify-content-between">
+            <span>© AtteKu</span>
+        <nav>
+            <a href="#" class="text-dark me-3">Home</a>
+            <a href="#" class="text-dark me-3">About</a>
+            <a href="#" class="text-dark me-3">Contact</a>
+        </nav>
+        </div>
+    </footer>
 
 
 

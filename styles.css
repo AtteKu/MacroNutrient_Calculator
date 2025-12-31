@@ -1,6 +1,34 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.btn-custom-color {
+    background: #e9bc92;
+}
+
+.btn-custom-color:hover { background-color: #d9a87f;
+    color: black;
+}
+
 .custom-image {
     width: 300px;
     height: 200px;
+    object-fit:
+    cover; 
+}
+
+.custom-image-add {
+    width: 500px;
+    height: 300px;
     object-fit:
     cover; 
 }
@@ -10,3 +38,45 @@
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+/* Background colors */
+.navbar-custom,
+.footer_custom,
+.text_style {
+    background: #e9bc92;
+    position: relative;
+}
+
+/* Shared element settings */
+.text_style::before,
+.text_style::after,
+.navbar-custom::before,
+.navbar-custom::after,
+.footer_custom::before,
+.footer_custom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  pointer-events: none;
+}
+
+/* Left side shadow */
+.text_style::before,
+.navbar-custom::before,
+.footer_custom::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.1), transparent);
+}
+
+/* Right side shadow */
+.text_style::after,
+.navbar-custom::after,
+.footer_custom::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.3), transparent);
+}
+
+
+

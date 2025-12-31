@@ -9,28 +9,126 @@
     <title>Macronutrient calculator v1.0</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Macronutrient Calculator</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     
     <div class="container pt-5 pb-5">
         <div class="p-4">
-            <p class="fs-1 text-center text-success fw-semibold">Macronutrient calculator</p>
+            <p class="fs-1 text-center fw-semibold">Macronutrient calculator</p>
         </div>
     </div>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide border rounded" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner border rounded"> 
+                <div class="carousel-item active">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="img_add.png" class="img-fluid w-100" alt="carousel_img1">
+                        </div>
+                        <div class="col-md-6 text-center fw-semibold text_style">
+                            <h3>Add products</h3>
+                            <p>Add your own food products to the database</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="carousel-item"> 
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                                <img src="img_remove.png" class="img-fluid w-100" alt="carousel_img2">
+                        </div>
+                        <div class="col-md-6 text-center fw-semibold text_style">
+                            <h3>Remove product</h3>
+                            <p>Remove products from the database you don't need</p>
+                        </div>
+                    </div>
+                </div>
+                          
+                <div class="carousel-item"> 
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                                <img src="img_calculate.png" class="img-fluid w-100" alt="carousel_img3">
+                        </div>
+                        <div class="col-md-6 text-center fw-semibold text_style">
+                            <h3>Calculate your calories</h3>
+                            <p>Calculate your daily calories and macros based on your foods</p>
+                        </div>
+                    </div>
+                </div>
+                        
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"> 
+                <span class="carousel-control-next-icon"></span> 
+            </button>
+        </div>
+    </div>
+    
+
     <div class="container p-5">
         <div class="row text-center">
             <div class="col">
                 <img src="img_add.png" class="custom-image border border-dark rounded" alt="food">
-                <button class="btn btn-success mt-3" onclick="open_add_product_site()">Add product</button>
+                <button class="btn btn-custom-color mt-3" onclick="open_add_product_site()">Add product</button>
             </div>
             <div class="col">
                 <img src="img_remove.png" class="custom-image border border-dark rounded" alt="food">
-                <button class="btn btn-danger mt-3">Remove product</button>
+                <button class="btn btn-custom-color mt-3">Remove product</button>
             </div>
             <div class="col">
                 <img src="img_calculate.png" class="custom-image border border-dark rounded" alt="food">
-                <button class="btn btn-primary mt-3 ">Calculate macros</button>
+                <button class="btn btn-custom-color mt-3 ">Calculate macros</button>
             </div>
         </div>
     </div>
+
+    <footer class="footer_custom py-4">
+        <div class="container d-flex justify-content-between">
+            <span>© AtteKu</span>
+        <nav>
+            <a href="#" class="text-dark me-3">Home</a>
+            <a href="#" class="text-dark me-3">About</a>
+            <a href="#" class="text-dark me-3">Contact</a>
+        </nav>
+        </div>
+    </footer>
 
 
 
